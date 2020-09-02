@@ -16,4 +16,4 @@ spec:
         spec:
             containers:
                 - name: client
-                  image: stephengrider/multi-client
+                  image: aryan9600/multi-client

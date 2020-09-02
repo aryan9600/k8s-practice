@@ -10,7 +10,7 @@ docker push aryan9600/multi-client:$SHA
 docker push aryan9600/multi-server:$SHA
 docker push aryan9600/multi-worker:$SHA
 
-kubectl appply -f k8s
+kubectl apply -f k8s
 kubectl set image deployments/client-deployment client=aryan9600/multi-client:$SHA
 kubectl set image deployments/server-deployment server=aryan9600/multi-server:$SHA
 kubectl set image deployments/worker-deployment worker=aryan9600/multi-worker:$SHA

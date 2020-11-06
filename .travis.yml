@@ -13,7 +13,7 @@ before_install:
     - gcloud auth activate-service-account --key-file service-account.json
     - gcloud config set project minecraft-284917
     - gcloud config set compute/zone asia-southeast2-a
-    - gcloud container clusters get-credentials os-project
+    - gcloud container clusters get-credentials os-proj
     - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
     - docker build -t aryan9600/react-test -f ./client/Dockerfile.dev ./client
 
